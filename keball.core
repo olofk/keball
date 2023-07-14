@@ -1,0 +1,26 @@
+CAPI=2:
+
+name : ::keball:0
+
+filesets:
+  f:
+    files:
+      - top.v : {file_type : verilogSource}
+      - tb.cpp : {file_type : cppSource}
+      - left.hex : {file_type : user, copyto : .}
+      - right.hex : {file_type : user, copyto : .}
+
+targets:
+  default:
+    filesets: [f]
+    flow: sim
+    flow_options:
+      tool : verilator
+      verilator_options : [-trace, -LDFLAGS, -lpulse-simple, -LDFLAGS, -lpulse]
+    hooks:
+      pre_run: [mkfifo]
+    toplevel : top
+
+scripts:
+  mkfifo:
+    cmd: [mkfifo, trace.vcd]

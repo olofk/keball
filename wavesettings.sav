@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Fri Jul 14 13:07:04 2023
+[*]
+[dumpfile] "(null)"
+[savefile] "/mnt/gentoo/home/olof/projects/keball/wavesettings.sav"
+[timestart] 0
+[size] 912 403
+[pos] 16 70
+*-18.903889 19000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 184
+[sst_expanded] 1
+[sst_vpaned_height] 80
+@8420
+TOP.o_left[15:0]
+@20000
+-
+-
+@8421
+TOP.o_right[15:0]
+@20000
+-
+-
+-
+[pattern_trace] 1
+[pattern_trace] 0
